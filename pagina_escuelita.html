@@ -154,6 +154,29 @@
 			background-image: url('FOTOS/webImage-background.png');
 			background-repeat: no-repeat;
 		}
+
+		div.seccion-3 {
+			display: flex;
+			flex-direction: row;
+		}
+
+		div.fotos-s3 {
+			display: flex;
+			flex-direction: column;
+		}
+
+		div.fotos_fila_arr {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		div.fotos_fila_arr,
+		div.fotos_fila_aba {
+			padding: 0.5em 0px;
+
+		}
 	</style>
 
 </head>
@@ -269,14 +292,33 @@
 
 		<section id='formaciones'>
 			<h1>FORMACIONES</h1>
-			<p>
-				La escuelita-tec es un espacio de alfabetización y apropiación de tecnologías
-				digitales donde se comparten saberes sobre hardware, software e internet, se realizan
-				actividades de reparación de dispositivos electrónicos-digitales, capacitaciones en
-				computación y programación y circulan reﬂexiones sobre las tecnologías y la soberanía
-				tecnológica.
-			</p>
-
+			<div class='seccion-3'>
+				<div class='fotos-s3'>
+					<div class='fotos_fila_arr'>
+						<img src='FOTOS/Formaciones/formacion_LR_263px.jpeg'
+							alt='formación en LibreRouter'>
+						<img src='FOTOS/Formaciones/formacion_extension_467px.jpeg'
+							alt='formación con extensión universitaria de la FAMAF'>
+					</div>
+					<div class='fotos_fila_aba'>
+						<img src='FOTOS/Formaciones/formacion_redes_800px.jpeg'
+							alt='formación en redes comunitarias de internet'>
+					</div>
+				</div>
+				<div class='texto'>
+					<p>
+						La escuelita-tec es un espacio de alfabetización y apropiación de
+						tecnologías
+						digitales donde se comparten saberes sobre hardware, software e
+						internet, se realizan
+						actividades de reparación de dispositivos electrónicos-digitales,
+						capacitaciones en
+						computación y programación y circulan reﬂexiones sobre las tecnologías y
+						la soberanía
+						tecnológica.
+					</p>
+				</div>
+			</div>
 		</section>
 	</main>
 </body>
