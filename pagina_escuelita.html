@@ -145,10 +145,11 @@
 			flex: 800px 1;
 		}
 
-		div.fotos img {
+		.imgfoto {
 			width: 100%;
 			height: auto;
 		}
+
 
 		div.background {
 			background-image: url('FOTOS/webImage-background.png');
@@ -163,6 +164,7 @@
 		div.fotos-s3 {
 			display: flex;
 			flex-direction: column;
+			padding: 1.5em;
 		}
 
 		div.fotos_fila_arr {
@@ -176,6 +178,14 @@
 		div.fotos_fila_aba {
 			padding: 0.5em 0px;
 
+		}
+
+		div.fotos_fila_arr .wrapfoto:nth-of-type(1) {
+			padding_right: 0.5em;
+		}
+
+		div.fotos_fila_arr .wrapfoto:nth-of-type(2) {
+			padding_left: 0.5em;
 		}
 	</style>
 
@@ -240,7 +250,8 @@
 				<h1>QUIENES SOMOS</h1>
 				<div class='seccion-1'>
 					<div class='fotos'>
-						<img src='FOTOS/escuelita3_800px.jpeg' alt='imagen de la escuelita tec'>
+						<img class='imgfoto' src='FOTOS/escuelita3_800px.jpeg'
+							alt='imagen de la escuelita tec'>
 					</div>
 					<div class='texto'>
 						<p>
@@ -295,13 +306,19 @@
 			<div class='seccion-3'>
 				<div class='fotos-s3'>
 					<div class='fotos_fila_arr'>
-						<img src='FOTOS/Formaciones/formacion_LR_263px.jpeg'
-							alt='formación en LibreRouter'>
-						<img src='FOTOS/Formaciones/formacion_extension_467px.jpeg'
-							alt='formación con extensión universitaria de la FAMAF'>
+						<div class='wrapfoto'>
+							<img class='imgfoto'
+								src='FOTOS/Formaciones/formacion_LR_278px.jpeg'
+								alt='formación en LibreRouter'>
+						</div>
+						<div class='wrapfoto'>
+							<img class='imgfoto'
+								src='FOTOS/Formaciones/formacion_extension_494px.jpeg'
+								alt='formación con extensión universitaria de la FAMAF'>
+						</div>
 					</div>
 					<div class='fotos_fila_aba'>
-						<img src='FOTOS/Formaciones/formacion_redes_800px.jpeg'
+						<img class='imgfoto' src='FOTOS/Formaciones/formacion_redes_800px.jpeg'
 							alt='formación en redes comunitarias de internet'>
 					</div>
 				</div>
@@ -316,6 +333,17 @@
 						computación y programación y circulan reﬂexiones sobre las tecnologías y
 						la soberanía
 						tecnológica.
+					</p>
+					<p>
+						Organizamos distintas formaciones, muchas veces con la visita de
+						distintas
+						organizaciones hermanas.
+						Realizamos talleres de edición de audios con software libre, uso de
+						aplicaciones de
+						texto y planillas de cálculo, desarrollo de páginas web. También hacemos
+						encuentros para
+						formarnos en internet para sostener nuestra red comunitaria.
+
 					</p>
 				</div>
 			</div>
