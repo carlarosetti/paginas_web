@@ -141,13 +141,14 @@
 
 		div.texto,
 		div.fotos {
-			padding: 1.5em;
+			padding: 0.5em;
 			flex: 800px 1;
 		}
 
 		.imgfoto {
 			width: 100%;
 			height: auto;
+			box-sizing: border-box;
 		}
 
 
@@ -164,7 +165,7 @@
 		div.fotos-s3 {
 			display: flex;
 			flex-direction: column;
-			padding: 1.5em;
+			padding: 0.5em;
 		}
 
 		div.fotos_fila_arr {
@@ -174,18 +175,20 @@
 			justify-content: space-between;
 		}
 
-		div.fotos_fila_arr,
-		div.fotos_fila_aba {
-			padding: 0.5em 0px;
 
+		.imgfoto {
+			padding: 0.5em;
 		}
 
-		div.fotos_fila_arr .wrapfoto:nth-of-type(1) {
-			padding_right: 0.5em;
+		main {
+			padding-bottom: 1em;
 		}
 
-		div.fotos_fila_arr .wrapfoto:nth-of-type(2) {
-			padding_left: 0.5em;
+		footer {
+
+			background-color: #b973d7;
+			height: 50px;
+			width: 100%;
 		}
 	</style>
 
@@ -349,6 +352,8 @@
 			</div>
 		</section>
 	</main>
+	<footer>
+	</footer>
 </body>
 
 </html>
