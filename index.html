@@ -29,7 +29,7 @@
 			background-color: white;
 		}
 
-		div.nav-botones {
+		ul.nav-botones {
 			display: flex;
 			flex-shrink: 0;
 			flex-direction: row;
@@ -49,15 +49,20 @@
 			align-items: center;
 		}
 
-		div.nav-botones div.boton-simple a {
+		ul.nav-botones li.boton-simple a {
 			color: #343a40;
 			text-decoration: none;
 
 		}
 
-		div.nav-botones div.boton-simple a:hover {
+		ul.nav-botones li.boton-simple a:hover {
 			color: #9e17d7;
 			text-decoration: none;
+
+		}
+
+		ul {
+			list-style-type: none;
 
 		}
 
@@ -150,6 +155,7 @@
 			width: 100%;
 			height: auto;
 			box-sizing: border-box;
+			padding: 0.5em;
 		}
 
 
@@ -177,9 +183,6 @@
 		}
 
 
-		.imgfoto {
-			padding: 0.5em;
-		}
 
 		main {
 			padding-bottom: 1em;
@@ -197,23 +200,37 @@
 
 		}
 
+		.menu-icon {
+			display: none;
+			font-size: 28px;
+			cursor: pointer;
+		}
+
 		@media (max-width:1300px) {
+			ul.nav-botones {
+				display: none;
+				flex-direction: column;
+				background-color: #ffffff;
+				width: 100%;
+				position: absolute;
+				top: 60px;
+				right: 0;
+			}
 
-			div.nav-botones {
+			.nav-botones.active {
 				display: flex;
-				flex-shrink: 0;
-				flex-direction: row;
-				justify-content: flex-end;
-				align-items: center;
-				font-size: 10px;
-				font-weight: 700;
 			}
 
-			.boton-violeta {
-
-				font-size: 10px;
-				font-weight: 700;
+			.boton {
+				line-height: 3.0;
+				padding: 0.5rem 1.00rem;
+				align-items: start;
 			}
+
+			.menu-icon {
+				display: block;
+			}
+
 
 			div.seccion-1 {
 				display: block;
@@ -243,34 +260,35 @@
 				</a>
 
 			</div>
-			<div class='nav-botones'>
-				<div class='boton boton-simple'>
+			<ul class='nav-botones' id='navLinks'>
+				<li class='boton boton-simple'>
 					<a href='#quienes-somos'>
-						<span class='newline'>QUIENES SOMOS</span>
+						QUIENES SOMOS
 					</a>
-				</div>
-				<div class='boton boton-simple'>
+				</li>
+				<li class='boton boton-simple'>
 					<a href='#internet-comunitario'>
-						<span class='newline'>INTERNET COMUNITARIO</span>
+						INTERNET COMUNITARIO
 					</a>
-				</div>
-				<div class='boton boton-simple'>
+				</li>
+				<li class='boton boton-simple'>
 					<a href='#formaciones'>
 						FORMACIONES
 					</a>
-				</div>
-				<div class='boton boton-simple'>
+				</li>
+				<li class='boton boton-simple'>
 					<a href=''>
 						LA ASAMBLEA
 					</a>
-				</div>
-				<div class='boton boton-violeta'>
+				</li>
+				<li class='boton boton-violeta'>
 					<a href='Taller_WEB/tallerweb.html'>
 						Taller WEB
 					</a>
-				</div>
+				</li>
+			</ul>
+			<div class="menu-icon" id="menuIcon">&#9776;</div>
 
-			</div>
 		</nav>
 
 
@@ -421,5 +439,14 @@
 	<footer>
 	</footer>
 </body>
+<script>
+
+	const menuIcon = document.getElementById('menuIcon');
+	const navLinks = document.getElementById('navLinks');
+
+	menuIcon.addEventListener('click', () => {
+		navLinks.classList.toggle('active');
+	});
+</script>
 
 </html>
