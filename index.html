@@ -4,8 +4,19 @@
 	<meta charset='utf-8'>
 	<title>Escuelita_Tec | Construyendo Soberanía Tecnológica desde los Barrios Populares</title>
 	<link rel='stylesheet' type='text/css' href='escuelita.css'>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
 	<style>
+		@font-face {
+			font-display: swap;
+			/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+			font-family: 'Permanent Marker';
+			font-style: normal;
+			font-weight: 400;
+			src: url('fonts/permanent-marker-v16-latin-regular.woff2') format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+				U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		}
+
 		html {
 			font-family: 'Lato' 'Lucida Console', 'Courier New', monospace;
 			font-size: 18px;
@@ -107,7 +118,11 @@
 
 		section {
 			margin: 0;
-			padding: 120px 0 0 0;
+			padding: 190px 0 0 0;
+		}
+
+		section.media {
+			padding: 130px 0 0 0;
 		}
 
 		div.encabezado {
@@ -189,10 +204,24 @@
 		}
 
 		footer {
-
-			background-color: #b973d7;
-			height: 50px;
+			border-color: #b973d7;
+			border-width: 0.5em;
 			width: 100%;
+			border-block-style: solid;
+		}
+
+		footer div p {
+			font-family: 'Permanent Marker', cursive;
+			font-size: 30px;
+			margin: 1em;
+			text-align: center;
+		}
+
+		footer div ul {
+			display: flex;
+			flex-direction: row;
+			flex-flow: row wrap;
+			justify-content: space-around;
 		}
 
 		span.newline {
@@ -205,6 +234,7 @@
 			font-size: 38px;
 			cursor: pointer;
 		}
+
 
 		@media (max-width:1300px) {
 			ul.nav-botones {
@@ -343,7 +373,7 @@
 			</section>
 		</div>
 
-		<section id='internet-comunitario'>
+		<section class='media' id='internet-comunitario'>
 			<h1>INTERNET COMUNITARIO</h1>
 			<p>
 			<div class='seccion-3'>
@@ -388,7 +418,7 @@
 			</div>
 		</section>
 
-		<section id='formaciones'>
+		<section class='media' id='formaciones'>
 			<h1>FORMACIONES</h1>
 			<div class='seccion-3'>
 				<div class='fotos-s3'>
@@ -437,6 +467,24 @@
 		</section>
 	</main>
 	<footer>
+		<div>
+			<p>Organizaciones compañeras</p>
+			<ul>
+				<li><a href='https://altermundi.net/'><img src='logos/altermundi.png'
+							width='100px' /></a></li>
+				<li><a href='https://camba.coop/'><img src='logos/camba.svg' width='100px' /></a></li>
+				<li><a href='https://librebase.org.ar/'><img src='logos/librebase.png'
+							width='100px' /></a></li>
+				<li><a href='https://www.instagram.com/cybercirujas.cba/?hl=es'><img
+							src='logos/cybercirujas.png' width='100px' /></a></li>
+				<li><a href='https://www.instagram.com/brujasbucaneras/'><img
+							src='logos/brujasbucaneras.jpg' width='100px' /></a></li>
+				<li><a href='https://www.instagram.com/protagonistasdigitales/?hl=es-la'><img
+							src='logos/protagonistas_digitales-1.png' width='100px' /></a>
+				</li>
+
+			</ul>
+		</div>
 	</footer>
 </body>
 <script>

@@ -3,9 +3,20 @@
 <head>
 	<meta charset='utf-8'>
 	<title>Escuelita_Tec | Taller de páginas WEB</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
 
 	<style>
+		@font-face {
+			font-display: swap;
+			/* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+			font-family: 'Permanent Marker';
+			font-style: normal;
+			font-weight: 400;
+			src: url('../fonts/permanent-marker-v16-latin-regular.woff2') format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+				U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+			/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+		}
+
 		html {
 			font-family: 'Lato' 'Lucida Console', 'Courier New', monospace;
 			font-size: 18px;
@@ -117,7 +128,17 @@
 		}
 
 		li {
+			margin: 2em;
 			padding: 1em;
+			border-style: groove;
+			border-width: 10px;
+			border-color: #266DB6;
+		}
+
+		li:hover {
+			border-style: groove;
+			border-width: 10px;
+			border-color: #b973d7;
 		}
 
 		@media (max-width:1300px) {
@@ -138,6 +159,11 @@
 				justify-content: center;
 				align-items: center;
 				flex-direction: column;
+
+			}
+
+			li {
+				margin: 2em;
 			}
 
 			div.central h3 {
@@ -182,10 +208,12 @@
 			<div class='central'>
 				<h3>Primeros Pasos en html y css ...</h3>
 				<ul>
-					<li><a href=''><img src='iconos/natura.jpeg' width='400px' /></a></li>
-					<li><a href=''><img src='iconos/natura.jpeg' width='400px' /></a></li>
-					<li><a href=''><img src='iconos/natura.jpeg' width='400px' /></a></li>
-					<li><a href=''><img src='iconos/natura.jpeg' width='400px' /></a></li>
+					<li><a href='Silvia/naturaleza.html'><img src='iconos/natura.png'
+								width='300px' /></a></li>
+					<li><a href='Dani/historia.html'><img src='iconos/maya.png' width='300px' /></a>
+					</li>
+					<li><a href='Lilo/Cocina.html'><img src='iconos/cocina.png' width='300px' /></a>
+					</li>
 				</ul>
 			</div>
 			<div class='lateral'>
